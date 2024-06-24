@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'source code pro', sans-serif;
+}
+
+:root {
+    --color_text-primary: #B5E7E7;
+    --color_text-secundary: rgb(22, 52, 107);
+    --color_text-tertiary: aqua;
+    --box_shadow-primary: 0px 6px 50px -20px rgb(20, 50, 102);
+}
+
+header {
+    width: 92%;
+    height: 90px;
+    position: fixed;
+    z-index: 100;
+    background: rgb(22, 52, 107, 0.8);
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 15px;
+}
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.logo img {
+    width: 40px; 
+    height: 40px;
+    margin: 25px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.logo.rotate {
+    transform: rotate(180deg); /* Rotación inicial */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu nav {
+    margin: 0px 100px;
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    margin: 16px;
+}
+
+.menu nav ul li a {
+    color: rgb(181, 231, 231);
+    font-size: 18px;
+    position: relative;    
+}
+
+.menu nav ul li a:hover {
+    color: aqua;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    margin: 170px;
+}
+
+.socialMedia img {
+    width: 24px; /* Tamaño del icono */
+    height: 24px; /* Asegura que sea cuadrado */
+    transition: transform 0.3s ease; /* Efecto de transición */
+    margin: 20px;
+}
+
+.socialMedia img:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+
+/*portada inicio*/
+
+.container__cover {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../Images/fondo.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    height: 100vh;
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.image__cover {
+    margin-bottom: 50px;
+}
+
+.image__cover img {
+    width: 200px; /* Tamaño del icono */
+    height: 200px;
+    margin-top: 150px;
+}
+
+.text__cover {
+    color: #B5E7E7;
+    font-size: 24px;
+}
+
+/*Estilos cajas proyectos*/
+
+.container__card-primary {
+    padding-top: 100px;
+    background-image: url("../Images/fondo.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-repeat: repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    
+}
+
+.card-primary {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary {
+    max-width: 800px;
+    margin: auto;
+    letter-spacing: 4px;
+}
+
+.text__card-primary h1 {
+    font-size: 36px;    
+    color: var(--color_text-primary);
+}
+
+.container__box-cardPrimary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__cardprimary {
+    max-width: 550px;
+    padding: 20px 0px;
+    margin: 20px;    
+}
+
+.box__cardprimary img {
+    width: 100%; 
+    height: 100%;     
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+ }
+
+.box__cardprimary img:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+    transform: scale(1.1);
+}
+
+.box__cardprimary h2 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #B5E7E7;
+    
+}
+
+.container__box-cardSecundary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__cardsecundary {
+    max-width: 550px;    
+    padding: 20px 0px 20px;
+    margin: 20px;
+}
+
+.box__cardsecundary img {
+    width: 550px; 
+    height: 370px;     
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box__cardsecundary img:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+    transform: scale(1.1);
+}
+
+.box__cardsecundary h2 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #B5E7E7;
+}
+
+.text_box-cardprimary h2:hover{
+    color: aqua;
+}
+
+.text_box-cardsecundary h2:hover{
+    color: aqua;
+}
+
+/*seccion about*/
+
+.container__about{    
+    background-image: url("../Images/fondo.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-repeat: repeat; /* Evita que la imagen se repita */
+    background-position: center;    
+    height: 100vh;       
+}
+
+.box__about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+
+.text__about{
+    max-width: 700px;
+    margin: auto;
+    background-color: rgb(44, 42, 42);
+    border-radius: 20px;
+    
+}
+
+.text__about h1{
+    text-align: center;
+    font-size: 36px;
+    color: var(--color_text-primary);
+    padding-top: 20px;
+}
+
+.text__about p{
+    color: aqua;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.image__about{
+    max-width: 600px;  
+    margin: auto;   
+    
+}
+
+.image__about img{
+    width: 100%; 
+    height: 100%;     
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+/* Estilos del footer */
+footer {
+    background: rgb(22, 52, 107,0.8); 
+    width: 90%;
+    margin: auto;
+    margin-top: 20px; 
+    border-radius: 15px;
+    padding: 20px; 
+}
+
+.container__footer {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+}
+
+.text__footer {
+    display: flex;
+    align-items: center;
+    gap: 200px; 
+}
+
+.text__footer h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--color_text-primary);
+}
+
+.text__footer p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--color_text-primary);
+}
+
+.text__footer .email-link {
+    color: var(--color_text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.text__footer .email-link:hover {
+    color: aqua;
+}
+
+.icono__footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icono__footer img {
+    max-width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.icono__footer img:hover {
+    transform: scale(1.2);
+}
