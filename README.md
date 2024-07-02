@@ -8,7 +8,7 @@ Este es mi primer portfolio creado en HTML, CSS y Javascript usando metodología
 * [LinkedIn](http://www.linkedin.com/in/javirodrigocode/)
 
 ## Ver ejemplo en vivo
-- [https://javirodrigo.github.io/mi-portfolio/](https://javirodrigo.github.io/mi-portfolio/)
+- [https://javirodrigocode.github.io/mi-portfolio/](https://javirodrigocode.github.io/mi-portfolio/)
 
 ## Instalación
 Este proyecto no necesita instalación, simplemente abre la carpeta o haz doble click en el .html

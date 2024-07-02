@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
     // efecto de rotacion del logo
 
     const logo = document.getElementById('logo');
